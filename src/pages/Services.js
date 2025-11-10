@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaCamera, FaVideo, FaPlane, FaHeart, FaBaby, FaBuilding, FaGift, FaUsers } from 'react-icons/fa';
+import { FaCamera, FaPlane, FaHeart, FaBaby, FaBuilding, FaGift } from 'react-icons/fa';
 import './Services.css';
 
 const Services = () => {
