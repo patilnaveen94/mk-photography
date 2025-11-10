@@ -1,0 +1,394 @@
+.packages-hero {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1606983340126-99ab4feaa64a?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80');
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  color: white;
+  margin-top: 80px;
+}
+
+.packages-hero-content {
+  text-align: center;
+}
+
+.packages-hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.packages-hero-content p {
+  font-size: 1.3rem;
+  opacity: 0.9;
+}
+
+.packages-cards {
+  background: #f8f9fa;
+}
+
+.packages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  align-items: start;
+}
+
+.package-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: all 0.4s ease;
+  position: relative;
+  animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.package-card:hover {
+  transform: translateY(-15px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(102, 126, 234, 0.2);
+}
+
+.package-card.popular {
+  transform: scale(1.05);
+  box-shadow: 0 15px 40px rgba(102, 126, 234, 0.3);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 15px 40px rgba(102, 126, 234, 0.3);
+  }
+  50% {
+    box-shadow: 0 20px 50px rgba(102, 126, 234, 0.4);
+  }
+  100% {
+    box-shadow: 0 15px 40px rgba(102, 126, 234, 0.3);
+  }
+}
+
+.popular-badge {
+  position: absolute;
+  top: 20px;
+  right: -30px;
+  background: linear-gradient(45deg, #667eea, #764ba2);
+  color: white;
+  padding: 8px 40px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transform: rotate(45deg);
+  z-index: 10;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 10px rgba(102, 126, 234, 0.5);
+  }
+  to {
+    box-shadow: 0 0 20px rgba(102, 126, 234, 0.8);
+  }
+}
+
+.package-header {
+  text-align: center;
+  padding: 40px 30px 30px;
+  border-top: 5px solid;
+  position: relative;
+}
+
+.package-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.package-header h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.package-price {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #667eea;
+  margin-bottom: 15px;
+}
+
+.package-description {
+  color: #666;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.package-features {
+  padding: 0 30px 20px;
+}
+
+.feature-highlight {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.feature-highlight strong {
+  display: block;
+  font-size: 1.3rem;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.feature-highlight span {
+  color: #666;
+  font-size: 1rem;
+}
+
+.package-inclusions {
+  padding: 0 30px 30px;
+}
+
+.package-inclusions h4 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.package-inclusions ul {
+  list-style: none;
+  padding: 0;
+}
+
+.package-inclusions li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 10px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.check-icon {
+  color: #28a745;
+  margin-top: 3px;
+  flex-shrink: 0;
+}
+
+.package-best-for {
+  padding: 0 30px 30px;
+}
+
+.package-best-for h4 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.best-for-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  background: #e9ecef;
+  color: #495057;
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.package-cta {
+  padding: 0 30px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.comparison-table {
+  background: white;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.comparison-table-content {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+.comparison-table-content th {
+  background: #667eea;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.comparison-table-content td {
+  padding: 15px 20px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+.feature-label {
+  text-align: left !important;
+  font-weight: 500;
+  color: #333;
+  background: #f8f9fa;
+}
+
+.feature-value {
+  color: #666;
+}
+
+.check {
+  color: #28a745;
+  font-size: 1.2rem;
+}
+
+.cross {
+  color: #dc3545;
+  font-size: 1.2rem;
+}
+
+.comparison-table-content tr:hover {
+  background: #f8f9fa;
+}
+
+.add-ons {
+  background: #f8f9fa;
+}
+
+.add-ons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.addon-card {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.addon-card:hover {
+  transform: translateY(-5px);
+}
+
+.addon-icon {
+  font-size: 2.5rem;
+  color: #667eea;
+  margin-bottom: 15px;
+}
+
+.addon-card h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.addon-price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #667eea;
+}
+
+.packages-cta {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 80px 0;
+}
+
+.packages-cta .cta-content {
+  text-align: center;
+}
+
+.packages-cta h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.packages-cta p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .packages-hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .packages-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .package-card.popular {
+    transform: none;
+  }
+  
+  .popular-badge {
+    top: 15px;
+    right: -25px;
+    padding: 6px 30px;
+    font-size: 0.8rem;
+  }
+  
+  .package-header {
+    padding: 30px 20px 20px;
+  }
+  
+  .package-price {
+    font-size: 2.5rem;
+  }
+  
+  .package-inclusions,
+  .package-best-for,
+  .package-cta {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .comparison-table-content th,
+  .comparison-table-content td {
+    padding: 12px 8px;
+    font-size: 0.9rem;
+  }
+  
+  .add-ons-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
