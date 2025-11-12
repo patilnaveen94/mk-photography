@@ -15,10 +15,10 @@ const Footer = () => {
             </div>
             <p>Capturing your precious moments with premium quality photography and videography services.</p>
             <div className="social-links">
-              <a href="#" aria-label="Facebook"><FaFacebook /></a>
-              <a href="#" aria-label="Instagram"><FaInstagram /></a>
-              <a href="#" aria-label="YouTube"><FaYoutube /></a>
-              <a href="#" aria-label="Twitter"><FaTwitter /></a>
+              <a href="https://facebook.com" aria-label="Facebook"><FaFacebook /></a>
+              <a href="https://instagram.com" aria-label="Instagram"><FaInstagram /></a>
+              <a href="https://youtube.com" aria-label="YouTube"><FaYoutube /></a>
+              <a href="https://twitter.com" aria-label="Twitter"><FaTwitter /></a>
             </div>
           </div>
 
@@ -68,8 +68,8 @@ const Footer = () => {
         <div className="footer-bottom">
           <p>&copy; 2024 MK Photography. All rights reserved.</p>
           <div className="footer-links">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Service</a>
+            <a href="/privacy">Privacy Policy</a>
+            <a href="/terms">Terms of Service</a>
           </div>
         </div>
       </div>

@@ -256,10 +256,10 @@ const Contact = () => {
               <div className="social-media">
                 <h3>Follow Us</h3>
                 <div className="social-links">
-                  <a href="#" aria-label="Facebook"><FaFacebook /></a>
-                  <a href="#" aria-label="Instagram"><FaInstagram /></a>
-                  <a href="#" aria-label="YouTube"><FaYoutube /></a>
-                  <a href="#" aria-label="Twitter"><FaTwitter /></a>
+                  <a href="https://facebook.com" aria-label="Facebook"><FaFacebook /></a>
+                  <a href="https://instagram.com" aria-label="Instagram"><FaInstagram /></a>
+                  <a href="https://youtube.com" aria-label="YouTube"><FaYoutube /></a>
+                  <a href="https://twitter.com" aria-label="Twitter"><FaTwitter /></a>
                 </div>
               </div>
             </div>
